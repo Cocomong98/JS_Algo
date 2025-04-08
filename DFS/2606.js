@@ -32,3 +32,21 @@ readline
             adj[b].push(a);
         }
     });
+
+// DFS로 탐색 : visited 배열 만들고 (방문한 것들), dfs 함수 정의하기 -> v 방문 후 미방문 시에 dfs를 재귀로 부름
+const visited = new Array(n + 1).fill(false);
+function dfs(v) {
+    // 지금 단계에서 방문
+    visited[v] = true;
+    for (const neighbor of adj[v]) {
+        // 아직 방문 전이라면 방문하기
+        if (!visited[neighbor]) dfs(neighbor);
+    }
+}
+dfs(1); // 1번 컴퓨터가 바이러스에 걸렸으니 1번부터 시작하기
+
+// 감염된 숫자 계산하기 (여기서 애초에 바이러스가 걸린 1번은 제외함)
+const count = visited.filter((v) => v).length - 1;
+console.log(count);
+
+process.exit();
