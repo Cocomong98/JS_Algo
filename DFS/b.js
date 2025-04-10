@@ -31,4 +31,5 @@ const DFS = (graph, startNode) => {
 };
 
 // DFS 출력
+// 방문한 순서대로 나올 것임
 console.log(DFS(graph, "A"));
