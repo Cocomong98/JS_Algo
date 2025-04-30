@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+// 늘보코치님 1주차 과제
+// 백준 컴퓨터 바이러스 문제
+
+>>>>>>> 3b14c77bcb2ef1cfbbdf2a6769d873734bebdd91
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout,

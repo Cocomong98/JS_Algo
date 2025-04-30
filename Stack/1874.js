@@ -1,3 +1,4 @@
+// 공통 : 백준 input 값 입력받기
 const fs = require("fs");
 let input = fs
     .readFileSync("/dev/stdin")

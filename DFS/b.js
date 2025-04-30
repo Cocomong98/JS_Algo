@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // 그래프 제시
+=======
+>>>>>>> 3b14c77bcb2ef1cfbbdf2a6769d873734bebdd91
 const graph = {
     A: ["B", "C"],
     B: ["A", "D"],
@@ -32,4 +35,8 @@ const DFS = (graph, startNode) => {
 };
 
 // DFS 출력
+<<<<<<< HEAD
+=======
+// 방문한 순서대로 나올 것임
+>>>>>>> 3b14c77bcb2ef1cfbbdf2a6769d873734bebdd91
 console.log(DFS(graph, "A"));
