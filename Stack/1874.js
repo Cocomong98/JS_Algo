@@ -7,6 +7,7 @@ let input = fs
     .split("\n")
     .map((item) => Number(item));
 
+// 이 부분이 숫자 세로 배열을 바꿔주는 중요한 부분
 const iter = input.shift();
 
 /*
