@@ -3,6 +3,7 @@
 
  */
 
+<<<<<<< HEAD
 // 입력부
 const fs = require("fs");
 const input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
@@ -19,11 +20,39 @@ for (let t = 0; t < T; t++) {
     const N = Number(input[index++]);
     const p = input[index++].split(" ").map(Number);
     const visited = new Array(N + 1).fill(false);
+=======
+/* 
+순열 사이클 개수 찾기 문제 해결 코드
+- DFS를 사용해 방문하지 않은 노드 탐색 시 사이클 카운트 증가
+*/
+
+// 입력받기
+const fs = require("fs");
+const input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
+
+const T = Number(input[0]);
+
+let index = 1;
+
+const result = [];
+
+for (let t = 0; t < T; t++) {
+    const N = Number(input[index++]);
+
+    const permutation = input[index++].split(" ").map(Number);
+
+    const visited = new Array(N + 1).fill(false);
+
+>>>>>>> df7c2c2eef8c363d0e608432d738c830c6f462f0
     let count = 0;
 
     function dfs(node) {
         visited[node] = true;
+<<<<<<< HEAD
         const next = p[node - 1];
+=======
+        const next = permutation[node - 1];
+>>>>>>> df7c2c2eef8c363d0e608432d738c830c6f462f0
         if (!visited[next]) dfs(next);
     }
 
@@ -34,7 +63,11 @@ for (let t = 0; t < T; t++) {
         }
     }
 
+<<<<<<< HEAD
     result.push(count);
+=======
+    result.push(count); // 현재 케이스 결과 저장
+>>>>>>> df7c2c2eef8c363d0e608432d738c830c6f462f0
 }
 
 console.log(result.join("\n"));
