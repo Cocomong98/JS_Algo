@@ -10,7 +10,7 @@ for (let i = 1; i <= M; i++) {
     graph[from].push(to);
     graph[to].push(from);
 }
-
+// BFS
 function bfs(start) {
     const queue = [start];
     visited[start] = true;
