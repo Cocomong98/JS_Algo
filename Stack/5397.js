@@ -10,6 +10,7 @@ for (let i = 0; i < T; i++) {
     password(input[i].split(""));
 }
 
+// answer func
 function password(str) {
     let answer = [];
     let idx = 0;
