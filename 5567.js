@@ -1,5 +1,6 @@
 const input = require("fs").readFileSync("dev/stdin").toString().trim().split("\n");
 
+// Queue 구현
 class Queue {
     q = [];
     h = 0;
