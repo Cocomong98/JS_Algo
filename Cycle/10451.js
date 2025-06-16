@@ -61,4 +61,5 @@ for (let t = 0; t < T; t++) {
     result.push(count); // 현재 케이스 결과 저장
 }
 
+// test
 console.log(result.join("\n"));
