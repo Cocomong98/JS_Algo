@@ -32,4 +32,5 @@ while (front < queue.length) {
     }
 }
 
+// 값 출력
 console.log(parents.slice(2).join("\n"));
