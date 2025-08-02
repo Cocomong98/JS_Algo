@@ -28,4 +28,5 @@ for (let i = 0; i < M; i++) {
     }
 }
 
+// 결과 출력
 console.log(walls.filter((el) => el === true).length);
