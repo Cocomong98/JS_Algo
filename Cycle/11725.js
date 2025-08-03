@@ -4,6 +4,7 @@ const input = require("fs")
     .trim()
     .split("\n");
 
+// 변수선언
 const N = Number(input[0]);
 const tree = Array.from({ length: N + 1 }, () => []);
 const visited = new Array(N + 1).fill(false);
