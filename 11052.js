@@ -9,4 +9,5 @@ for (let i = 2; i < dp.length; i++) {
     }
 }
 
+// 결과 출력
 console.log(dp[N]);
