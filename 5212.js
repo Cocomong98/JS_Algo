@@ -69,6 +69,7 @@ for (let i = 0; i < r; i++) {
     }
 }
 
+// 저장
 for (let i = startX; i <= finalX; i++) {
     let row = ""; // 한 행을 저장할 문자열
     for (let j = startY; j <= finalY; j++) {
