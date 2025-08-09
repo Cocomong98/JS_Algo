@@ -33,4 +33,5 @@ for (let node = 1; node <= N; node++) {
     }
 }
 
+// 결과 출력
 console.log(componentCount);
