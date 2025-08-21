@@ -28,4 +28,5 @@ trainArray.forEach((val) => {
     passTrain.add(JSON.stringify(val));
 });
 
+// 결과 출력
 console.log(passTrain.size);
