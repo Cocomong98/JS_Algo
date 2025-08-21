@@ -4,3 +4,24 @@
 실제 로마 숫자에서는 문자의 순서가 중요하지만, 이 문제에서는 순서는 신경쓰지 않는다. 예를 들어, 실제 로마 숫자에서 IX는 9를 의미하지만, 이 문제에서는 11을 의미한다.
 로마 숫자를 N개 사용해서 만들 수 있는 서로 다른 수의 개수를 구해보자.
 */
+
+const fs = require("fs");
+const input = fs.readFileSync("./dev/stdin").toString().trim();
+const N = +input;
+
+const Rome = [1, 5, 10, 50];
+
+let cnt = 1;
+let answer = [1, 5, 10, 50];
+while (cnt < N) {
+    let temp = [];
+    Rome.forEach((v) => {
+        for (let i = 0; i < answer.length; i++) {
+            temp.push(answer[i] + v);
+        }
+    });
+    answer = [...new Set(temp)];
+    cnt++;
+}
+
+console.log(answer.length);
