@@ -33,6 +33,7 @@ const queue = new Queue();
 queue.enque([1, 0]);
 visited[1] = true;
 
+// 반복으로 계산
 let cnt = 0;
 while (queue.size()) {
     const [cur, dep] = queue.deque();
